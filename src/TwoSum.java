@@ -9,7 +9,7 @@ public class TwoSum {
         HashMap<Integer,Integer> hm = new HashMap<>();
         for(int i=0;i<arr.length;i++){
             if(hm.containsKey(t-arr[i])){
-                return new int[]{hm.get(t-arr[i]),i};
+                return new int[]{hm.get(t-arr[i])+1,i+1};
             }else{
                 hm.put(arr[i],i);
             }
